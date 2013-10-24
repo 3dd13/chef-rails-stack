@@ -31,3 +31,9 @@ default['puma']['workers'] = 0
 
 default['unicorn']['timeout'] = 60 
 default['unicorn']['workers'] = 2
+
+default['rvm']['ruby']['implementation'] = 'ruby'
+default['rvm']['ruby']['version'] = '2.0.0'
+default['rvm']['ruby']['patch_level'] = 'p247'
+default['rvm']['default_ruby']      = "ruby-2.0.0-p247"
+default['rvm']['user_default_ruby'] = "ruby-2.0.0-p247"

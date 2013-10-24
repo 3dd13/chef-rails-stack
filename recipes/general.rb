@@ -14,7 +14,8 @@ service "nginx" do
   supports :reload => true
 end
 
-include_recipe "rbenv"
+# include_recipe "rbenv"
+include_recipe "rvm::system"
 
 # install image processing libraries
 %w{imagemagick libmagickcore-dev libmagickwand-dev advancecomp gifsicle jpegoptim libjpeg-progs optipng pngcrush}.each do |pkg|

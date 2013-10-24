@@ -64,10 +64,10 @@ define :ruby_app do
   end
 
   # ruby part
-  rbenv_ruby params[:ruby_version] do
-    user app_user
-    app_name app_name
-  end
+  # rbenv_ruby params[:ruby_version] do
+  #   user app_user
+  #   app_name app_name
+  # end
 
   # logrotate
   logrotate_app app_name do

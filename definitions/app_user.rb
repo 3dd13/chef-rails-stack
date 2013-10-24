@@ -48,5 +48,5 @@ define :app_user do
     source "gemrc.erb"
   end
 
-  rbenv_user params[:name]
+  # rbenv_user params[:name]
 end
